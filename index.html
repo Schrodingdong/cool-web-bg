@@ -5,20 +5,209 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas Testing</title>
-    <style>
-        canvas{
-            margin:0;
-            position:absolute;
-            top:0;left:0;
-            /* if we use width & height ghadi gha y zoomer 3la dakchi
-            width:100%;height:100%; */
-            background-color: #1A1A40;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="slider.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/67a5e2021d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <canvas id="canvas">If not loaded</canvas>
-    <script src="script.js"></script>
+
+
+<canvas id="canvas">If not loaded</canvas>
+<nav id="nav">
+    <!-- <div class="menu-wrap">
+        <input type="checkbox" class="toggler" name="" id="">
+        <div class="icon">
+            <div class="hamburger">
+                <div></div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="phone-links">
+                <a href="#About"    >About me        </a>
+                <a href="#Path"     >Path            </a>
+                <a href="#Skills"   >Skills          </a>
+                <a href="#Projects" >Projects        </a>
+                <a href="#Contact"  >Contact me      </a>
+            </div>
+        </div>
+    </div> -->
+    
+    <div class="links">
+        <a href="#About"    >sample Links     </a>
+        <a href="#Path"     >sample Links     </a>
+        <a href="#Skills"   >sample Links     </a>
+        <a href="#Projects" >sample Links     </a>
+        <a href="#Contact"  >sample Links     </a>
+    </div>
+</nav>
+
+
+
+<!-- <div class="About wholepage-container">
+    <table class="card">
+        <tr>
+            <td class="card-image-container">
+                <img class="card-image" src="static/images/me.jpg" alt="Profile Image">
+            </td>
+            <td class="card-text">
+                <h1>ALAMI IBN JAMAA HAMZA</h1>
+                <p>Hello ! I am ALAMI IBN JAMAA Hamza.
+                    I am a passionate software engineer student at ENSIAS who's goal is 
+                    to learn about the evergrowing technologies that exists and future ones !</p>
+            </td>
+        </tr>
+    </table>
+</div> -->
+
+<!-- <div class="Skills wholepage-container">
+    <div class="title">
+        <h1>My Skills</h1>
+    </div>
+    <div class="scrollable">
+        <table class="card line">
+            <tr>
+                <td class="card-image-container">
+                    <img class="card-image" src="images/android.jpg" alt="">
+                </td>
+                <td class="card-text">
+                    <h1>Android Development</h1>
+                    <p class="caption">One of the most important tools a software engineer should know in this world where everything is evolving to be mobile based</p>
+                </td>
+            </tr>
+        </table>
+        <table class="card line">
+            <tr>
+                <td class="card-image-container">
+                    <img class="card-image" src="images/CodeForces_Cover.jpg" alt="">
+                </td>
+                <td class="card-text">
+                    <h1>Codeforces</h1>
+                    <p class="caption">Competitive programming is one of my hobbies of mine, practicing either at our IT club or as a fun time killer.</p>
+                </td>
+            </tr>
+        </table>
+        <table class="card line">
+            <tr>
+                <td class="card-image-container">
+                    <img class="card-image" src="images/Java-Logo.png" alt="">
+                </td>
+                <td class="card-text">
+                    <h1>Java</h1>
+                    <p class="caption">As an object oriented enthusiast, Java is my go to language at the moment.</p>
+                </td>
+            </tr>
+        </table>
+
+        <table class="card line">
+            <tr>
+                <td class="card-image-container">
+                    <img class="card-image" src="images/Unity-Logo-featured.png" alt="">
+                </td>
+                <td class="card-text">
+                    <h1>Unity Development</h1>
+                    <p class="caption">Fascinated by games and their intricate mecanics, unity and C# were my first actual projects.</p>
+                </td>
+            </tr>
+        </table>
+
+        <table class="card line">
+            <tr>
+                <td class="card-image-container">
+                    <img class="card-image" src="images/Unity-Logo-featured.png" alt="">
+                </td>
+                <td class="card-text">
+                    <h1>Web Development</h1>
+                    <p class="caption">The web is being more and more used and integrated in our daily lives, as users and developpers. Being able to create a standalone website is one skill that everyone should have and perfect !</p>
+                </td>
+            </tr>
+        </table>
+
+        
+
+
+    </div>
+
+
+
+
+
+
+</div> -->
+
+<!--
+<div class="Projects wholepage-container">
+    <section id="slider">
+        <input type="radio" name="slider" id="s1" checked>
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+        
+        <label for="s1" id="slide1">
+            <div class="heading">
+                <img id="instalytics" src="images/new/instalytics - Copie.png" alt="">
+                <div class="heading-title">
+                    <h1> Instalytics</h1>
+                </div>
+            </div>
+            <div class="description">
+                <p>
+                    Tired of the usual analytics tool that instagram gives ? Instalytics is for you ! Instalytics that
+                    gives an advanced graphical representation of instagram analytics. Currently working on adding more features such as analytics interpretation ...
+                </p>
+                <div class="links">
+                    <a id="instalytics-github" href="https://github.com/Schrodingdong/InstalyticsJavaApp">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </label>
+        <label for="s2" id="slide2">
+            <div class="heading">
+                <img id="instalytics" src="images/new/musical cure.png" alt="">
+                <div class="heading-title">
+                    <h1>Musical Cure</h1>
+                </div>
+            </div>
+            <div class="description">
+                <p>
+                    Being a game enjoyer, building games is one of the many hobbies of mine. This project was made as a submission to the cultural heritage game jam that ran from November 5th 2021 at 8:00 AM to November 21st 2021 at 9:00 PM. 
+                </p>
+                <div class="links">
+                    <a id="instalytics-github" href="https://schrodingdong.itch.io/musical-cure">
+                        <i class="fa-brands fa-itch-io"></i>
+                    </a>
+                </div>
+            </div>
+        </label>
+        <label for="s3" id="slide3">
+            <div class="heading">
+                <img id="instalytics" src="images/new/Human-Intelligence-Can-Fix-AI-Shortcomings-1.jpg" alt="">
+                <div class="heading-title">
+                    <h1>Object Recognition System</h1>
+                </div>
+            </div>
+            <div class="description">
+                <p>
+                    A simple AI webapp capable of detecting and classifying 100 objects in a given image. 
+                </p>
+                <div class="links">
+                    <a id="instalytics-github" href="https://github.com/Schrodingdong/PFA_1A_Object_Recognition/tree/master">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </label>
+    </section>
+</div>
+-->
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
