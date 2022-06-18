@@ -22,7 +22,33 @@ canvas{
 }
 
 
-
+#nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100vh;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    /* BASICALY THE EFFECT DIAL BLUR F NAV BAR !!! */
+    /* backdrop-filter: blur(5px); */
+}
+#nav a{
+    position: relative;
+    display: block;
+    margin-bottom: 2rem;
+    font-size: larger;
+    transition: 0.3s;
+}
+.links{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--text-color);
+    z-index: 2;
+}
 
 
 
