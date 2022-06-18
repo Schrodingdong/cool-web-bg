@@ -14,5 +14,5 @@ this simple animated background can be customised by changing the javascript and
 
 
 #### CSS :
---background-color : the background color of the canvas 
+--background-color : the background color of the canvas <br />
 --text-color : the color of the text
