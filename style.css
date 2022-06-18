@@ -1,0 +1,286 @@
+:root{
+    /*--primary-color : #FA58B6;
+    --secondary-color : #7A0BC0;*/
+    --background-color : #1A1A40;
+    /*--secondary-background-color : #270082;*/
+    --text-color : rgb(240, 248, 255);
+
+    /*--title-size: 2rem;
+    --text-size: 1.5rem;*/
+}
+*{
+    text-decoration: none;
+    font-family: 'Poppins' , sans-serif;
+    letter-spacing: 2px;
+    color: var(--text-color);
+}
+
+
+
+canvas{
+    margin:0;
+    position:absolute;
+    top:0;left:0;
+    /* if we use width & height ghadi gha y zoomer 3la dakchi
+    width:100%;height:100%; */
+    background-color: var(--background-color);
+    z-index: -1;
+}
+.scrollable{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow-y: scroll;
+    height: 70%;
+    width: 90%;
+    padding: 1.5rem;
+    min-width: 75rem;
+}
+.scrollable::-webkit-scrollbar{
+    width: 2vw;
+}
+.scrollable::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+    border-radius: 20px;
+}
+.scrollable::-webkit-scrollbar-track{
+    background-color: rgb(61, 43, 79);
+    border-radius: 10px;
+}
+
+
+
+
+.title{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-size: var(--title-size);
+}
+
+
+
+
+/* big screen */
+@media (min-width: 801px) {
+    /*---------------------------- NAVIGATION --------------------------*/
+    #nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15%;
+        height: 100vh;
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 2;
+        /* BASICALY THE EFFECT DIAL BLUR F NAV BAR !!! */
+        /* backdrop-filter: blur(5px); */
+    }
+    #nav a{
+        position: relative;
+        display: block;
+        margin-bottom: 2rem;
+        font-size: larger;
+        transition: 0.3s;
+    }
+    .links{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: var(--text-color);
+        z-index: 2;
+    }
+
+
+    /*---------------------------- CONTENT --------------------------*/
+    .wholepage-container{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 85%;
+        height: 100vh;
+        z-index: 0;
+        text-align: center;
+    }
+    .card{
+        position: absolute;
+
+        display: flex;
+        flex-wrap: nowrap;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+        min-width: 70rem;
+        font-size: 2rem;
+        text-align: left;
+
+        border-radius: 1rem;
+        box-shadow: 15px 15px 15px rgba(0, 0, 0, 1);
+        backdrop-filter: blur(5px);
+
+    }
+    .card.line{
+        background-color: rgba(240, 248, 255, 0.1);
+        display: block;
+        position: relative;
+        margin-bottom: 2rem;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+        top: 12rem;
+        max-height: 500px;
+        font-size: 1.5rem;
+    }
+    .card.line .caption{
+        font-size: 1.5rem;
+    }
+
+
+    .card .card-text {
+        position: flex;
+        margin: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+    }
+    .card .card-text > p {
+        width: 100%;
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+    .About .card .card-image-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        height: 100%;
+    }
+    .About .card .card-image{
+        width: 100%;
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: 10px 10px 0 black;
+        object-fit: cover;
+    }
+
+    .Skills .card-image{
+        margin: 1.5rem;
+        width: 100%;
+    }
+
+
+
+    .flex-row{
+        position: inherit;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        top: 50%;
+        left: 50%;
+    }
+    .card.compact{
+        margin: 1rem;
+
+        position: relative;
+        width: 350px;
+        min-width: 5rem;
+        height: 450px;
+        min-height: 5rem;
+        background-color: #FA58B6;
+    }
+    .card.compact .card-image-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .card.compact .card-image-container .card-image{
+
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+
+
+
+
+
+
+
+
+
+    #profile-picture{
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+        object-fit: cover;
+    }
+}
+
+
+/* smol screen */
+@media (max-width: 800px) {
+
+    #nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 5rem;
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+        /* BASICALY THE EFFECT DIAL BLUR F NAV BAR !!! */
+        backdrop-filter: blur(5px);
+    }
+
+    .links{
+        display: none;
+        position: absolute;
+        width: fit-content;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: var(--text-color);
+        z-index: 2;
+    }
+
+    a{
+        position: relative;
+        margin-right: 1em;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+        letter-spacing: 2px;
+        color: var(--text-color);
+        transition: 0.3s;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+#nav a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--primary-color);
+    height: 3px;
+    width: 0;
+    transition: 0.3s;
+}
+a:hover{
+    color: #ffb5e0;
+}
+a:hover:after{
+    width: 100%;
+}
