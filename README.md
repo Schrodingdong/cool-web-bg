@@ -1,8 +1,16 @@
 # Cool Particle Bacground for websites !
 this small repo is about a particle background for a website, that can be customised to fit anyone's needs.
 
-### how does it work ?
+### How does it work ?
 this simple animated background can be customised by changing the javascript and css files. To put this cool background into context, there is a nav bar added with some sample links to give an overall idea on how this would look on an actual website !
+
+### How to use :
+- take the canva element from the html and paste it in the top section in your body
+- make a separate js file and link it at the end of the body
+- take the css associated with the ***canva*** tag, the other css is there for the nav and links
+
+here is a guide about js and css variables :
+
 
 #### Javascript :
 ***PARTICLE_NUMBER_FG*** : defines how many particles there are in the forground.<br />
@@ -16,3 +24,5 @@ this simple animated background can be customised by changing the javascript and
 #### CSS :
 --background-color : the background color of the canvas <br />
 --text-color : the color of the text
+
+
