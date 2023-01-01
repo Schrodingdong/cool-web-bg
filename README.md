@@ -1,3 +1,5 @@
+![what](https://img.shields.io/badge/Language%20support-JS%20TS-green)
+
 # Cool Particle Bacground for websites !
 this small repo is about a particle background for a website, that can be customised to fit anyone's needs.
 
